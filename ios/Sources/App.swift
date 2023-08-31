@@ -1,7 +1,7 @@
 import SampleLibrary
 import SwiftUI
 
-class basicError : Error {}
+class BasicError : Error {}
 
 @main
 struct SampleApp: App {
@@ -45,7 +45,7 @@ struct SampleApp: App {
                     Button("Exception") {
                         // Test logging exception to Datadog from app layer.
                         do {
-                            throw basicError()
+                            throw BasicError()
                         } catch {
                             logger.error(
                                 message: "App: \(message)",

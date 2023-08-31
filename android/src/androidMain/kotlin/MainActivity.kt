@@ -15,9 +15,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import com.datadog.android.Datadog
 import com.juul.datadog.sample.info
 import com.juul.datadog.sample.testException
-import com.datadog.android.Datadog
 
 public class MainActivity : ComponentActivity() {
 
@@ -31,13 +31,13 @@ public class MainActivity : ComponentActivity() {
                     OutlinedTextField(
                         value = text,
                         onValueChange = { text = it },
-                        label = { Text("Message") }
+                        label = { Text("Message") },
                     )
                     Button(
                         onClick = {
                             println("data init? ${Datadog.isInitialized()}")
                             info(text)
-                        }
+                        },
                     ) {
                         Text("Info")
                     }
@@ -48,12 +48,12 @@ public class MainActivity : ComponentActivity() {
                     OutlinedTextField(
                         value = exceptionText,
                         onValueChange = { exceptionText = it },
-                        label = { Text("Message") }
+                        label = { Text("Message") },
                     )
                     Button(
                         onClick = {
                             testException(text, exceptionText)
-                        }
+                        },
                     ) {
                         Text("Exception")
                     }

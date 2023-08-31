@@ -143,6 +143,7 @@ tasks.register("datadogClientTokens") {
             package com.juul.datadog.sample
             
             internal actual val DATADOG_CLIENT_TOKEN: String = "$token"
+            
             """.trimIndent()
         )
     }

@@ -38,6 +38,7 @@ jobs:
           arguments: jsBrowserWebpack
 
       - run: brew install xcodegen
+      - run: which xcodegen
 
       - name: generateXcodeProject
         uses: gradle/gradle-build-action@v2

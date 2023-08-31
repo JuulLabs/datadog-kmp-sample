@@ -5,7 +5,7 @@ import com.juul.datadog.TrackingConsent.Granted
 @JsExport
 public class Webapp {
 
-    public fun init(): Unit {
+    public fun init() {
         initializeDatadog(Granted)
     }
 

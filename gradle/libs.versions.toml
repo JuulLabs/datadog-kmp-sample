@@ -9,7 +9,7 @@ datadog-kmp = "0.1.0"
 jvm-toolchain = "11"
 
 [libraries]
-compose-activity = { module = "androidx.activity:activity-compose", version = "1.8.1" }
+compose-activity = { module = "androidx.activity:activity-compose", version = "1.8.2" }
 compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "compose-compiler" }
 compose-material = { module = "androidx.compose.material:material", version = "1.5.4" }
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
@@ -29,4 +29,4 @@ android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version = "1.9.21" }
 kotlinter = { id = "org.jmailen.kotlinter", version = "4.1.0" }
-swiftpackage = { id = "io.github.luca992.multiplatform-swiftpackage", version = "2.2.0" }
+swiftpackage = { id = "io.github.luca992.multiplatform-swiftpackage", version = "2.2.1" }

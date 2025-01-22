@@ -1,6 +1,6 @@
 [versions]
-agp = "8.7.3"
-android-compile = "34"
+agp = "8.8.0"
+android-compile = "35"
 android-min = "21"
 android-target = "33"
 androidx-compose = "1.7.6"
@@ -9,7 +9,7 @@ jvm-toolchain = "11"
 kotlin = "2.1.0"
 
 [libraries]
-compose-activity = { module = "androidx.activity:activity-compose", version = "1.9.3" }
+compose-activity = { module = "androidx.activity:activity-compose", version = "1.10.0" }
 compose-material = { module = "androidx.compose.material:material", version.ref = "androidx-compose" }
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "androidx-compose" }
 datadog-kmp = { module = "com.juul.datadog:datadog", version.ref = "datadog-kmp" }

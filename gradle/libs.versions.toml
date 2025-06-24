@@ -2,7 +2,7 @@
 agp = "8.10.0"
 android-compile = "35"
 android-min = "21"
-android-target = "33"
+android-target = "35"
 androidx-compose = "1.8.3"
 datadog-kmp = "0.3.1"
 jvm-toolchain = "11"

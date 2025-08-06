@@ -4,8 +4,6 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         google()
-//        mavenLocal()
-        maven("https://central.sonatype.com/repository/maven-snapshots/")
     }
 
     resolutionStrategy {

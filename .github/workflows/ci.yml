@@ -12,11 +12,11 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
-        with:
-          path: multiplatform-swiftpackage
-          repository: luca992/multiplatform-swiftpackage
-          token: ${{ secrets.TOKEN }}
+#      - uses: actions/checkout@v4
+#        with:
+#          path: multiplatform-swiftpackage
+#          repository: luca992/multiplatform-swiftpackage
+#          token: ${{ secrets.TOKEN }}
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
@@ -26,10 +26,10 @@ jobs:
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v4
 
-      - run: sed -i '' '/sign(/d' build.gradle.kts
-        working-directory: multiplatform-swiftpackage
-      - run: ./gradlew -PRELEASE_SIGNING_ENABLED=false -Pversion=2.3.0-SNAPSHOT -PVERSION_NAME=2.3.0-SNAPSHOT publishToMavenLocal
-        working-directory: multiplatform-swiftpackage
+#      - run: sed -i '' '/sign(/d' build.gradle.kts
+#        working-directory: multiplatform-swiftpackage
+#      - run: ./gradlew -PRELEASE_SIGNING_ENABLED=false -Pversion=2.3.0-SNAPSHOT -PVERSION_NAME=2.3.0-SNAPSHOT publishToMavenLocal
+#        working-directory: multiplatform-swiftpackage
 
       - name: local.properties
         working-directory: library

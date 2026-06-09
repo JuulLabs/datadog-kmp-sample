@@ -141,7 +141,6 @@ tasks.register("datadogClientTokens") {
     }
 }
 
-// AGP 9's KMP Android library plugin has no preBuild task; hook all Kotlin compilations instead.
 tasks.withType<KotlinCompilationTask<*>> {
     dependsOn("datadogClientTokens")
     shouldRunAfter("clean")
